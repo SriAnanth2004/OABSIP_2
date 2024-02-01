@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="https:kit.fontawesome.com/5492403780.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header" id="header">
+        <div><img src="images/background.png" class="background">
+            
+        </div>
+        <div id="homepage">
+            <img src="images/logo.png" class="logo">
+            <div class="buttons">
+                <button id="Home">Home</button>
+                <button id="About">About</button>
+                <button id="education">Education</button>
+                <button id="contact">Contact</button>
+            </div>
+            <h1 class="basic">Hi,I am <span>Kuntipuram Sri Ananth</span><br> I am a full stack developer from Hyderabad.</h1>
+        </div>
+    </div>
+<!--------------about-------------->    
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <h1 class="abouthead">About Me:</h1>
+                    <h2>This is Sri Ananth a full stack developer from Hyderabad. <br>I am proficient in
+                     <span>Java,JavaScript,Html,Css and JS.React.</span><br>
+                     I am a third-year B.tech student studying ComputerScience and Engineering.<br>
+                     I can be a useful resource for <span>web development, app development, and design.</span><br>
+                     I had done and am doing few projects in the field of web and app development and designing</h2>
+                </div>
+                <div class="about-col-2">
+                    <img src="images/user.png" class="user">
+                </div>
+            </div>
+        </div>
+    </div>
+<!---------------Education----------->
+    <div id="Education">
+        <div class="container">
+            <div class="rows">
+                <div class="education-col-1">
+                    <img src="images/education.png" class="Education">
+                </div>
+                <div class="education-col-2">
+                    <h1>Education:</h1>
+                    <h2>*In 2019, I completed my senior high school education at Sri Chaitanya School Medchal.<br>
+                        *I completed my intermediate studies at Bowrampet's Sri Chaitanya Junior College in(2019–2021).<br>
+                        *I am a third-year student at Kalasalingam Academy of Research and Education (2021–present) pursuing a B.Tech in Computer Science and Engineering.</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-------------------contact------------------->
+    <div id="Contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1>Contact Me</h1>
+                <p><i class="fa-brands fa-instagram"></i>  chary@2004</p>
+                <p><i class="fa-brands fa-whatsapp"></i>  9392671021</p>
+                <p><i class="fa-brands fa-linkedin"></i>  Kuntipuram SriAnanth</p>
+                <p><i class="fa-solid fa-envelope"></i></i>  kunthipuramsriananth@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>  9392671021</p>
+                <div>
+                    <button id="cv">download CV</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script>
+        document.getElementById('cv').addEventListener('click',function(){
+            var fileUrl = 'images/cv.pdf';
+    
+            var downloadLink = document.createElement('a');
+            
+            downloadLink.href = fileUrl;
+            downloadLink.download = 'CV.pdf';
+    
+            document.body.appendChild(downloadLink);
+    
+            downloadLink.click();
+    
+            document.body.removeChild(downloadLink);
+        });
+        
+       
+    </script>
+</body>
+</html>
